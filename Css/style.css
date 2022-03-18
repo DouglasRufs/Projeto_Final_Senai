@@ -58,6 +58,10 @@ body {
   flex-wrap: wrap;
   align-items: center;
 }
+.active {
+  color: var(--skin-color);
+  text-decoration: underline;
+}
 .justify_content_between {
   justify-content: space-between;
 }
@@ -66,7 +70,6 @@ body {
 }
 .inner_shadow {
   box-shadow: var(--inner-shadow);
-
 }
 .hover_in_shadow {
   position: relative;
@@ -102,8 +105,7 @@ body {
   border-radius: 25px;
   transition: all 0.3s ease;
   display: inline-block;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin: 15px;
 }
 .btn_1::after {
   opacity: 0.7;
@@ -430,6 +432,109 @@ body {
   max-width: 60%;
   padding: 0 15px;
 }
-.about_img .inner_shadow{
-  width: fit-content;
+.about_section .about_img .img_box {
+  /* width: fit-content; */
+  padding: 15px;
+  border-radius: 15px;
+}
+.about_section .about_img .img_box img {
+  width: 100%;
+  border: 5px solid transparent;
+  border-radius: 10px;
+}
+.about_section .about_info p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 15px;
+  color: var(--text-black-600);
+}
+.about_section .about_info span {
+  font-weight: 600;
+}
+.about_section .about_img .social_links {
+  margin-top: 20px;
+  text-align: center;
+}
+.about_section .about_img .social_links a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 35px;
+  margin: 0 4px;
+  transform: all 0.3s ease;
+  color: var(--text-black-600);
+}
+.about_section .about_img .social_links a::after {
+  border-radius: 50%;
+}
+.about_section .about_img .social_links a:hover {
+  color: var(--skin-color);
+}
+.about_section .about_tags {
+  /* background-color: red; */
+  padding: 60px 15px 50px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+}
+.about_section .about_tags .about_items {
+  display: inline-block;
+  margin: 0 5px 10px;
+  border: 1px solid transparent;
+  padding: 5px 10px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  color: var(--text-black-600);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.about_section .about_tags .about_items:hover:not(.active) {
+  opacity: 0.6;
+}
+/* .about_section .about_tags .about_items .active {
+  color: var(--skin-color);
+} */
+
+/* -----------------------Skills--------------------- */
+.about_section .tab_content {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.about_section .skills .skills_items {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 15px;
+}
+.about_section .skills .skills_items p {
+  font-size: 16px;
+  color: var(--text-black-600);
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 0 0 10px;
+}
+.about_section .skills .skills_items .progress {
+  height: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+.about_section .skills .skills_items .progress_bar {
+  background-color: var(--skin-color);
+  height: 6px;
+  left: 7px;
+  top: 7px;
+  position: absolute;
+  border-radius: 10px;
+}
+.about_section .skills .skills_items .progress_bar span {
+  position: relative;
+  right: 0;
+  top: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-black-600);
+  margin-top: -40px;
 }
